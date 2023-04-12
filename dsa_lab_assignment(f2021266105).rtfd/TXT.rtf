@@ -1,0 +1,79 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fmodern\fcharset0 Courier;
+\f3\fswiss\fcharset0 Arial-BoldMT;\f4\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red255\green255\blue255;\red24\green25\blue27;
+}
+{\*\expandedcolortbl;;\cssrgb\c13333\c13333\c13333;\cssrgb\c100000\c100000\c100000;\cssrgb\c12549\c12941\c14118;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+
+\f1\b \ul POINTERS:
+\f0\b0 \ulnone \
+\
+In C++, a pointer refers to a variable that holds the address of another variable. Like regular variables, pointers have a data type. For example, a pointer of type integer can hold the address of a variable of type integer. A pointer of character type can hold the address of a variable of character type.\
+\
+
+\f1\b \ul EXAMPLE:\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2\b0\fs22\fsmilli11250 \cf2 \cb1 \ulnone #include <iostream>\
+using namespace std;\
+int main() \{\
+	int  x = 27;  \
+	int  *ip;        \
+	ip = &x;       \
+	cout << "Value of x is : ";\
+	cout << x << endl;\
+	cout << "Value of ip is : ";\
+	cout << ip<< endl;\
+	cout << "Value of *ip is : ";\
+	cout << *ip << endl;\
+	return 0;\
+\}\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \
+
+\f1\b \ul DE-BUGGER:
+\f3\fs42 \cf4 \ulnone \strokec4 \
+\pard\pardeftab720\sl480\partightenfactor0
+
+\f4\b0\fs24 \cf4 \cb3 Debugging is\'a0
+\f3\b a methodical process of finding and reducing the number of bugs (or defects) in a computer program, thus making it behave as originally expected.\
+\
+MANIPULATING HEXADECIMAL ADDRESS:\
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f4\b0\fs20 \cf2 \strokec2 #include <iostream>\cb1 \
+\cb3 using namespace std;\cb1 \
+\cb3 int main() \{\cb1 \
+\cb3 \'a0 \'a0 int* x=new int;\cb1 \
+\cb3 \'a0 \'a0 cout<<x<<endl;\cb1 \
+\cb3 \'a0 \'a0 *x=155;\cb1 \
+\cb3 \'a0 \'a0 int* ptr=(int*)0x24c2bb918b0;\cb1 \
+\cb3 \'a0 \'a0 int y=*ptr;\cb1 \
+\cb3 \'a0 \'a0 cout<<y;\cb1 \
+\cb3 \'a0 \'a0 return 0;\cb1 \
+\cb3 \}
+\f3\b\fs24 \cf4 \strokec4 \
+\pard\pardeftab720\sl480\partightenfactor0
+\cf4 EXAMPLE:\
+Debugging singly linked list;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {{\NeXTGraphic Screenshot 2023-01-01 at 10.43.45 PM.png \width28800 \height18000 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}
+\fs36 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf2  the address of head;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {{\NeXTGraphic Screenshot 2023-01-01 at 10.59.14 PM.png \width28800 \height18000 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}}
